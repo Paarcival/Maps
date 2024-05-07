@@ -1,0 +1,129 @@
+/* Global Styles */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: url('https://lh3.googleusercontent.com/p/AF1QipNLxvBkJvzLYVH8SDkcTTGpfSoNrAZLhh8BCGWK=s1360-w1360-h1020');
+	background-size: cover;
+	background-position: center;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Quicksand', sans-serif;
+}
+
+/* Header Styles */
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 0 0 auto;
+	padding: 20px;
+	background-image: linear-gradient(to right, #8BC34A, #4CAF50, #009688); /* New gradient background */
+	background-size: 300% 100%;
+	background-position: right bottom;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: background-position 0.5s ease; /* Add transition effect */
+}
+
+.header:hover {
+	background-position: left bottom; /* Change background position on hover */
+}
+
+.header h1 {
+	font-family: "Anton", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 20px 0;
+	color: #fff;
+}
+
+/* Select Location Styles */
+
+#select-location {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	display: block;
+	position: relative;
+	margin: 0;
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+	padding: 7px 10px;
+	height: 42px;
+	outline: 0;
+	border: 0;
+	border-radius: 12px;
+	background-color: #fff; /* White background */
+	color: #4CAF50; /* Green text color */
+	transition: all 0.25s ease;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+#select-location:hover {
+	background-color: #f2f2f2; /* Light gray background on hover */
+	color: #000; /* Darker text color on hover */
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow effect on hover */
+}
+
+#select-location:focus {
+	box-shadow: 0 0 5px rgba(0, 52, 12, 0.5);
+}
+
+#select-location option {
+	background-color: #fff;
+	color: #4CAF50; /* Green text color */
+	transition: all 0.25s ease;
+}
+
+#select-location option:hover {
+	background-color: #4e37fb; /* Lighter green color on hover */
+	color: #fff;
+}
+
+/* Logo Styles */
+
+#logo {
+	width: 100px;
+	margin-right: 20px;
+}
+
+/* Map Styles */
+
+#map {
+	width: 60%;
+	height: 60%;
+	flex: 1 1 auto;
+	margin: auto;
+	border-style: ridge;
+	border-width: 5px;
+	border-color: #4B7ABC;
+	background-color: #fff;
+	border-radius: 12px;
+	margin-top: 20px;
+}
+
+#map.leaflet-marker-icon {
+	background-color: transparent;
+	border: 1px solid #fdf2c3;
+}
+
+#map.leaflet-popup-content-wrapper {
+	background-color: #fff;
+}
